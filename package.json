@@ -1,0 +1,31 @@
+{
+  "name": "aws-budget",
+  "version": "0.1.0",
+  "bin": {
+    "aws-budget": "bin/aws-budget.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ts-build.out cdk.out",
+    "synth": "npm run clean && npm run build && npm run cdk synth",
+    "deploy": "npm run cdk deploy",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.94.1",
+    "@types/jest": "^26.0.21",
+    "@types/node": "14.14.35",
+    "aws-cdk": "1.94.1",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
+    "typescript": "~4.2.3"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-budgets": "^1.94.1",
+    "@aws-cdk/core": "1.94.1",
+    "source-map-support": "^0.5.19"
+  }
+}
