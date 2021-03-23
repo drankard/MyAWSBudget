@@ -5,7 +5,7 @@ export class AwsBudgetStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const dailyBudget = new budget.CfnBudget(this, 'MyBudget', {
+    new budget.CfnBudget(this, 'MyBudget', {
       budget: {
         budgetName: 'MyBudget',
         budgetLimit: {
