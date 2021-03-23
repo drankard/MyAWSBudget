@@ -1,4 +1,4 @@
-# My budget
+# My AWS budget
 
 I have experienced billing surprises to many times. therefore..
 This is one of the first stacks I deploy to accounts I work with 
