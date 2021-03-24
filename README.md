@@ -16,6 +16,7 @@ https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html
 `CDK_NEW_BOOTSTRAP=1 cdk bootstrap aws://<ACCOUNT-NUMBER>/<REGION>`
 
 * Clone the project and cd to the directory
+* Configure in cdk.json (`notification_mail` is required)
 * Synthesize and deploy the app
   * `npm run synth` 
   * `npm cdk deploy`

@@ -18,7 +18,7 @@ export class AwsBudgetStack extends cdk.Stack {
       notificationsWithSubscribers: [{
         subscribers: [{
           subscriptionType: 'EMAIL',
-          address: this.node.tryGetContext('recipient _mail')
+          address: this.node.tryGetContext('notification_mail')
         }],
         notification: {
           comparisonOperator: 'GREATER_THAN',
