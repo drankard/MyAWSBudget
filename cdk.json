@@ -10,7 +10,7 @@
     "@aws-cdk/core:newStyleStackSynthesis": true,
 
 
-    "recipient _mail": "xxxx@example.com",
+    "notification_mail": "xxxx@example.com",
     "amount": 1,
     "currency": "USD",
     "period": "DAILY"
